@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belin B | Frontend Developer &amp; CSE Student</title>
+  <meta name="description" content="Portfolio of Belin B — Frontend Developer, aspiring Full Stack Developer and Computer Science Engineering student.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-mark">
+      <span>B</span>
+      <svg viewBox="0 0 100 100" class="loader-ring"><circle cx="50" cy="50" r="44"/></svg>
+    </div>
+  </div>
+
+  <!-- Particle Background -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">Belin<span>.</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#education" class="nav-link" data-section="education">Education</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#certificates" class="nav-link" data-section="certificates">Certificates</a>
+        <a href="/Belin_B_Resume.pdf" class="nav-link" data-section="resume">Resume</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-text reveal-up">
+          <p class="hero-greet">Hi, I'm</p>
+          <h1 class="hero-name">BELIN B</h1>
+          <h2 class="hero-type">
+            <span id="typedText"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-tagline">Building modern, responsive and user-friendly web experiences.</p>
+
+          <div class="hero-actions">
+            <a href="/Belin_B_Resume.pdf" class="btn btn-primary" download>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+              Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+
+          <div class="hero-links">
+            <a href="https://github.com/BelinBensam" target="_blank" rel="noopener" class="btn btn-ghost">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.82 1.18 3.08 0 4.41-2.7 5.38-5.27 5.67.41.36.78 1.08.78 2.18v3.23c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/belin-b-aab769385?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="btn btn-ghost">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.66H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap reveal-scale">
+          <div class="hero-image-glow"></div>
+          <div class="hero-image-frame">
+            <img src="/hero.jpg" alt="Belin B" loading="eager">
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-head reveal-up">
+        <p class="eyebrow">Get to know me</p>
+        <h2>About Me</h2>
+      </div>
+
+      <div class="glass-card about-card reveal-up">
+        <div class="about-image">
+          <img src="/hero.jpg" alt="Belin B portrait" loading="lazy">
+        </div>
+
+        <div class="about-content">
+          <p class="about-text">I am a Computer Science Engineering student passionate about Frontend Development, UI Design, and building modern web applications.</p>
+          <p class="about-text">I enjoy creating responsive, user-friendly interfaces and continuously learning new technologies.</p>
+
+          <div class="about-details">
+            <div class="detail"><span class="detail-label">Name</span><span class="detail-value">Belin B</span></div>
+            <div class="detail"><span class="detail-label">Date of Birth</span><span class="detail-value">24 July 2004</span></div>
+            <div class="detail"><span class="detail-label">Location</span><span class="detail-value">Kanyakumari, Tamil Nadu, India</span></div>
+            <div class="detail"><span class="detail-label">Degree</span><span class="detail-value">Bachelor of Engineering</span></div>
+            <div class="detail"><span class="detail-label">Branch</span><span class="detail-value">Computer Science &amp; Engineering</span></div>
+            <div class="detail"><span class="detail-label">College</span><span class="detail-value">Narayanaguru College of Engineering</span></div>
+            <div class="detail"><span class="detail-label">CGPA</span><span class="detail-value">8.4</span></div>
+            <div class="detail"><span class="detail-label">Graduation Year</span><span class="detail-value">2026</span></div>
+          </div>
+
+          <div class="about-langs">
+            <span class="tag">Tamil</span>
+            <span class="tag">English</span>
+            <span class="tag">Malayalam</span>
+          </div>
+
+          <div class="about-contact">
+            <a href="mailto:belinbensam@gmail.com">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+              belinbensam@gmail.com
+            </a>
+            <a href="tel:+919487848062">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +91 9487848062
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-head reveal-up">
+        <p class="eyebrow">What I work with</p>
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="glass-card skill-card reveal-up">
+          <div class="skill-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Frontend</h3>
+          <ul class="skill-list">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Bootstrap</li><li>Responsive Design</li><li>UI/UX Fundamentals</li>
+          </ul>
+        </div>
+
+        <div class="glass-card skill-card reveal-up">
+          <div class="skill-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17v3a1 1 0 0 0 1 1h3"/><path d="M20 7V4a1 1 0 0 0-1-1h-3"/><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+          </div>
+          <h3>Programming</h3>
+          <ul class="skill-list">
+            <li>Python</li><li>Basic Data Structures</li><li>OOP Concepts</li>
+          </ul>
+        </div>
+
+        <div class="glass-card skill-card reveal-up">
+          <div class="skill-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Tools</h3>
+          <ul class="skill-list">
+            <li>Git</li><li>GitHub</li><li>VS Code</li><li>Figma</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="glass-card progress-card reveal-up">
+        <div class="progress-row">
+          <div class="progress-label"><span>HTML</span><span class="progress-pct">95%</span></div>
+          <div class="progress-track"><div class="progress-fill" data-value="95"></div></div>
+        </div>
+        <div class="progress-row">
+          <div class="progress-label"><span>CSS</span><span class="progress-pct">90%</span></div>
+          <div class="progress-track"><div class="progress-fill" data-value="90"></div></div>
+        </div>
+        <div class="progress-row">
+          <div class="progress-label"><span>JavaScript</span><span class="progress-pct">80%</span></div>
+          <div class="progress-track"><div class="progress-fill" data-value="80"></div></div>
+        </div>
+        <div class="progress-row">
+          <div class="progress-label"><span>Python</span><span class="progress-pct">75%</span></div>
+          <div class="progress-track"><div class="progress-fill" data-value="75"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="section-head reveal-up">
+        <p class="eyebrow">My academic journey</p>
+        <h2>Education</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <span class="timeline-year">2023 – 2026</span>
+            <h3>Bachelor of Engineering</h3>
+            <p class="timeline-sub">Computer Science and Engineering</p>
+            <p class="timeline-org">Narayanaguru College of Engineering</p>
+            <span class="tag tag-cgpa">CGPA: 8.4</span>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <span class="timeline-year">2021 – 2023</span>
+            <h3>Diploma in CSE</h3>
+            <p class="timeline-org">Union Christian Polytechnic College</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <span class="timeline-year">2020 – 2021</span>
+            <h3>HSC</h3>
+            <p class="timeline-org">St Mary's School</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <span class="timeline-year">2018 – 2019</span>
+            <h3>SSLC</h3>
+            <p class="timeline-org">St Antony's Matriculation School</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section-head reveal-up">
+        <p class="eyebrow">Where I've worked</p>
+        <h2>Experience</h2>
+      </div>
+
+      <div class="glass-card experience-card reveal-up">
+        <div class="experience-top">
+          <div>
+            <h3>Frontend Developer Intern</h3>
+            <p class="experience-org">Srishti Innovative</p>
+          </div>
+          <span class="tag">July 2025</span>
+        </div>
+        <ul class="experience-list">
+          <li>Designed UI layouts in Figma</li>
+          <li>Developed responsive webpages</li>
+          <li>Worked with HTML and CSS</li>
+          <li>Learned modern web design principles</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-head reveal-up">
+        <p class="eyebrow">Things I've built</p>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <div class="glass-card project-card reveal-up">
+          <div class="project-glow"></div>
+          <h3>Real-Time LPG Cylinder Monitoring &amp; Leak Prevention System</h3>
+          <p class="project-desc">Continuously measures LPG cylinder weight using sensors, detects gas leakage, and provides alert notifications with mobile monitoring and ESP32 integration.</p>
+          <div class="project-tags">
+            <span class="tag">Gas Leak Detection</span>
+            <span class="tag">Cylinder Monitoring</span>
+            <span class="tag">Mobile App Integration</span>
+            <span class="tag">ESP32 Connectivity</span>
+            <span class="tag">Alert Notifications</span>
+            <span class="tag">Safety Automation</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="btn btn-outline btn-sm">GitHub</a>
+            <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="section">
+      <div class="section-head reveal-up">
+        <p class="eyebrow">Proof of learning</p>
+        <h2>Certificates</h2>
+      </div>
+
+      <div class="certs-grid">
+        <div class="glass-card cert-card reveal-up">
+          <div class="cert-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>Figma</h3>
+          <p>UI Design Certification</p>
+        </div>
+        <div class="glass-card cert-card reveal-up">
+          <div class="cert-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Python</h3>
+          <p>Programming Certification</p>
+        </div>
+        <div class="glass-card cert-card reveal-up">
+          <div class="cert-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Frontend Development Course</p>
+        </div>
+        <div class="glass-card cert-card reveal-up">
+          <div class="cert-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-9M14 17H5M17 21l4-4-4-4M7 3 3 7l4 4"/></svg>
+          </div>
+          <h3>Internship</h3>
+          <p>Srishti Innovative</p>
+        </div>
+        <div class="glass-card cert-card reveal-up">
+          <div class="cert-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M8.5 13.5 6 21l6-3 6 3-2.5-7.5"/></svg>
+          </div>
+          <h3>Hackathons</h3>
+          <p>Participation &amp; Achievements</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section">
+      <div class="section-head reveal-up">
+        <p class="eyebrow">Take it with you</p>
+        <h2>Resume</h2>
+      </div>
+
+      <div class="glass-card resume-card reveal-up">
+        <div class="resume-icon">
+          <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+        </div>
+        <h3>Belin B — Resume</h3>
+        <p>A complete overview of my education, skills, projects and experience.</p>
+        <a href="/Belin_B_Resume.pdf" class="btn btn-primary" download>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+          Download Resume
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-head reveal-up">
+        <p class="eyebrow">Let's talk</p>
+        <h2>Contact Me</h2>
+      </div>
+
+      <div class="contact-wrap">
+        <div class="glass-card contact-info reveal-up">
+          <h3>Get in touch</h3>
+          <p>Have an opportunity, a project, or just want to say hi? My inbox is always open.</p>
+          <a class="contact-item" href="mailto:belinbensam@gmail.com">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            belinbensam@gmail.com
+          </a>
+          <a class="contact-item" href="tel:+919487848062">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +91 9487848062
+          </a>
+          <div class="contact-socials">
+            <a href="https://github.com/BelinBensam" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.82 1.18 3.08 0 4.41-2.7 5.38-5.27 5.67.41.36.78 1.08.78 2.18v3.23c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/belin-b-aab769385?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.66H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/belin_777_?igsh=eng1dDJtbzQ0OW4x" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="glass-card contact-form reveal-up" id="contactForm" novalidate>
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder=" " required>
+            <label for="name">Name</label>
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder=" " required>
+            <label for="email">Email</label>
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder=" " required>
+            <label for="subject">Subject</label>
+            <span class="form-error" id="subjectError"></span>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+            <label for="message">Message</label>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+
+          <div class="form-success" id="formSuccess">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            Message sent successfully!
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>Designed &amp; Developed by <span>Belin B</span></p>
+      <p class="footer-copy">© 2026 All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
